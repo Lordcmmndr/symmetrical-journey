@@ -22,16 +22,19 @@ This project demonstrates how to:
 - Navigate to the AWS S3 Console.
 - Create a new bucket. Note that bucket names are globally unique and must adhere to AWS naming conventions.
 - Select a region close to your location for optimal performance. For this project, the `eu-north-1` (Stockholm) region was used.
+![Screenshot 2024-12-30 135331](https://github.com/user-attachments/assets/89ed51bd-0d99-4173-a002-be9b07db1efc)
 
 #### 2. Upload Website Files
 - Upload the necessary files to the S3 bucket, including:
   - `index.html`: The main HTML file for the website.
   - Image and asset folder: Contains images and other assets for the website.
+![Screenshot 2024-12-30 142548](https://github.com/user-attachments/assets/8bb70e93-2acf-450e-ba67-45974bcee869)
 
 #### 3. Enable Static Website Hosting
 - Go to the "Properties" tab of your S3 bucket.
 - Edit the "Static website hosting" option and enable it.
 - Specify the `index.html` file as the entry point.
+![Screenshot 2024-12-30 143936](https://github.com/user-attachments/assets/fec5b206-0d8a-4756-bf45-695e488c3900)
 
 #### 4. Configure Object Permissions
 - By default, objects in S3 buckets are private. To make them publicly accessible:
@@ -41,6 +44,7 @@ This project demonstrates how to:
 #### 5. Access Your Website
 - Once static website hosting is enabled, AWS provides a bucket endpoint URL.
 - Use this URL to access your website. For example: `http://<bucket-name>.s3-website.<region>.amazonaws.com`
+![Screenshot 2024-12-30 150136](https://github.com/user-attachments/assets/42427002-a6ad-4bd2-b674-2f47fdec62a9)
 
 ### Common Issues
 - **403 Forbidden Error**: This occurs when objects are not publicly accessible. Ensure that all website files have public read permissions.
